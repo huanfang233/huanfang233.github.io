@@ -3,7 +3,7 @@ layout: post
 title: "幻坊动漫社"
 date: 2016-06-28 01:00:00
 tags: 幻坊
-cover: http://localhost:4000/asserts/images/cover1.png
+cover: https://huanfang233.github.io/asserts/images/cover1.png
 ---
 
 济南大学幻坊动漫社，是一个以“在动漫中寻找简单的快乐”的宗旨为基础建立起的社团。主要活动以cosplay，动漫原画创作，优秀动漫电影欣赏，广播剧创作为主。幻坊动漫社立足于济南大学，面向济南漫圈，依据“天下漫友是一家”（搬运）的原则，热忱欢迎各界各学校各年级的动漫爱好者加入幻坊大家庭。  
@@ -75,7 +75,7 @@ cover: http://localhost:4000/asserts/images/cover1.png
 
 幻坊动漫社看板娘（君）约酱与污酱。由幻坊动漫社的折折设计  
 
-![](http://localhost:4000/asserts/images/yue.jpg)  
+![](https://huanfang233.github.io/asserts/images/yue.jpg)  
 
 > 姓名：约酱  
 > 性别：女  
@@ -90,7 +90,7 @@ cover: http://localhost:4000/asserts/images/cover1.png
 > 最近有什么开心的事情呢：看到污酱被学长搭讪了  
 > 那烦恼呢：约酱哪里会有烦恼啦~~~  
 
-![](http://localhost:4000/asserts/images/wu.jpg)  
+![](https://huanfang233.github.io/asserts/images/wu.jpg)  
 
 > 姓名：污酱  
 > 性别;男  

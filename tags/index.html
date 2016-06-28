@@ -1,0 +1,37 @@
+---
+layout: page
+---
+ <section class="post-list">
+{% for tag in site.tags %}
+{% for post in tag[1] %}
+  <article class="post" attr="{{ tag[0] }}" style="display:none">
+	{% if post.title %}
+	<h2 class="title"> <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+	{% endif %}
+  	<time>{{ post.date | date: "%B %-d, %Y" }}</time>
+	<section class="content">
+	 	{% if post.cover %}
+	 	<img src="{{ post.cover }}">
+	  	{% endif%}
+		{{ post.content | strip_html | truncate:300 }}
+ 		<div class="readmore">
+      		<a href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+    	</div>
+ 	</section>
+</article>
+{% endfor %}
+{% endfor %}
+</section>
+<script  type="text/javascript">
+
+	var tag = window.location.hash.replace(/#/, '');
+	if(tag != ''){
+	$(".post").each(
+		function(index){
+			if($(this).attr("attr") ==  decodeURI(tag))
+   				$(this).fadeIn(500);
+			} 
+		);
+		
+}
+</script>

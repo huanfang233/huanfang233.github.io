@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>幻坊动漫社</title>
+	<meta name="description" content="幻坊动漫社官方网站">
+	<meta name="keywords" content="幻坊,幻坊动漫,幻坊动漫社">
+	<script type="text/javascript" src="http://system128.com/media/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="http://system128.com/media/js/jquery.backstretch.min.js"></script>
+	<style>
+
+
+    * {
+  padding: 0;
+  margin: 0;
+}
+
+body
+{
+  color: white;
+  font-size: 1.4rem;
+  background: #000;
+  font-family: Microsoft YaHei,sans-serif;
+}
+
+#wrapper
+{
+
+  text-align: center;
+}
+
+#logo img
+{
+  width: 50%;
+}
+#discrption
+{
+  font-size: 1rem;
+}
+.title
+{
+  font-size: 2.0rem;
+  margin: -30px 0px -5px;
+}
+.titlehr
+{
+  max-width: 1080px;
+  margin:5px auto;
+  border:0;
+  border-bottom:2px solid #fff;
+  transition:width 2s linear;
+  -moz-transition:width 2s linear; /* Firefox 4 */
+  -webkit-transition:width 2s linear; /* Safari and Chrome */
+  -o-transition:width 2s linear; /* Opera */
+
+}
+
+.list ul
+{
+  width: 20%;
+  margin: 0 auto;
+}
+.list ul li
+{
+  padding: 8px;
+ list-style-type: none;
+}
+
+.list a
+{
+  display: block;
+  color: white; 
+  -webkit-transition:.2s linear;
+  -moz-transition:.2s linear;
+  -o-transition:.2s linear;
+  transition:.2s linear;
+  text-decoration: none;
+}
+
+.list a:hover
+{
+  color:#00b3ba;
+  border-radius:3px;
+  background-color:#fff
+}
+
+#footer
+{
+  font-size: 0.8rem;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+#footer a
+{
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:hover
+{
+  color: #66ccff;
+} 
+
+
+@media screen and (max-width:640px)
+{
+  #logo img
+  {
+   width: 100%;
+  }
+  body
+  {
+   font-size: 1rem;  
+  }
+  .list ul
+  {
+    width: 80%;
+  }
+  .title
+  {
+    font-size: 1.6rem;
+    margin: -4px auto;
+  }
+  #discrption
+{
+  font-size: 0.9rem;
+}
+}
+	</style>
+</head>
+<body>
+<div id="wrapper">
+	<main id="main">
+		<div id="hd" style="display:none">
+			<div id="logo"><img src="hflogo.png" alt="hflogo"></div>
+			<div class="title">幻坊动漫社</div>
+			<span id="discrption">天下naizi是一♂家</span>
+			<hr id="thr" class="titlehr" style="width:0%">
+		</div>
+		<div class="list">
+			<ul id="uli">
+				<li style="display:none"><a href="/home">Home</a></li>
+				<li style="display:none"><a href="/about">About</a></li>
+				<li style="display:none"><a href="/links">Links</a></li>
+			</ul>
+		</div>
+	</main>
+	<footer id="footer">
+	<span>Copyright 2016 幻坊动漫社 Developed by <a href="http://system128.com">system128</a></span> 
+	</footer>
+	</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#hd").fadeIn(2000);
+	$("#thr").width("70%");
+  $("#uli li").each(
+		function(index){
+   			$(this).delay(400*index+1000).fadeIn(1000)});
+});
+	var bg=new Array(
+"http://system128.com/media/images/background/o_007.jpg",
+"http://img2.3lian.com/2014/f4/184/d/125.jpg",
+"http://img2.3lian.com/2014/f4/184/d/127.jpg",
+"http://img2.3lian.com/2014/f4/184/d/128.jpg",
+"http://img.netbian.com/file/2015/0712/2bcf5c7bd86185868f1017d0bb2bd519.jpg"
+);
+ var index = 0,oldIndex;
+    index = Math.floor((Math.random()*bg.length));
+    $.backstretch(bg[index], {
+        duration: 12000,
+        fade: 1500
+    });
+setInterval(function() {
+    oldIndex = index;
+    do {
+        index = Math.floor((Math.random()*bg.length));
+    }while (oldIndex == index);
+    $.backstretch(bg[index]);
+}, 12000);
+</script>
+</html>

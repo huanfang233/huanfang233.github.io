@@ -1,0 +1,11 @@
+gems: [jekyll-paginate]
+title: 幻坊动漫社
+
+baseurl: ""   # the subpath of your site, e.g. /blog
+url: "huanfang233.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+paginate: 8
+paginate_path: "home/page:num"

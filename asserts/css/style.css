@@ -712,6 +712,10 @@ body.menu-open #site-menu {
 #header #site-nav-switch.active {
   transform: rotate(90deg);
 }
+.menu-open #site-menu
+{
+  display: inherit;
+}
 #site-menu {
   position: absolute;
   top: 69px;
@@ -725,6 +729,7 @@ body.menu-open #site-menu {
   transform: translate3d(280px, 0, 0);
   transition: transform 0.24s ease;
   z-index: 2;
+  display: none;
 }
 #site-menu nav .nav {
   position: relative;
